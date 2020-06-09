@@ -1,12 +1,7 @@
-A Web Based System for Tracking records in prison facilities. 
+## CRIME RECORDS TRACKER
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+A Web Based System for Tracking records in prison facilities.
+>>>>>>> ceb7f2aa7e22afa120c66faf46050e1939e86160
 
 ## License
 
