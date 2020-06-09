@@ -15,9 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// pages routes
 Route::get('about', 'FrontendController@aboutPage');
 Route::get('service','FrontendController@servicePage');
 Route::get('screenshot','FrontendController@screenshotPage');
 Route::get('pricing','FrontendController@pricingPage');
 Route::get('team','FrontendController@teamPage');
 Route::get('contact','FrontendController@contactPage');
+
+// contacts routes
+Route::get('/contacts','ContactsController@index');
+Route::get('/contacts/create','ContactsController@create');
+Route::post('/contactsaction','ContactsController@storeDevice');
