@@ -1,31 +1,50 @@
-</<!DOCTYPE html>
-<html>
-<head>
+@extends('frontend.layout')
+@section('title',"Contacts")
+@section('content')
 
-</head>
-<body>
 
-<h1>All Information About Contacts</h1>
+<br>
+<br>
+<center>
+<div class="page-header">
+    <h1>CONTACT INFORMATION</h1>
+  </div>
+</center>
+<br>
+<br>
+<table class="table table-dark table-stripped ">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"> Name</th>
+      <th scope="col"> Phone</th>
+      <th scope="col"> Email</th>
+      <th scope="col"> Message</th>
+    </tr>
+  </thead>
 
-@foreach ($contacts as $contact)
-<li> {{ $contact}}  </li>
-@endforeach
+  <!-- table content -->
+  <tbody>
+    @foreach($contacts as $contact)
+    <tr>
 
-<h1>Only Names Of Contacts</h1>
 
-@foreach ($contacts as $contact)
+      <th scope="row">{{ $contact->id }}</th>
+      <td>{{ $contact->name }}</td>
+      <td>{{ $contact->phone }}</td>
+      <td>{{ $contact->email }}</td>
+      <td>{{ $contact->message }}</td>
 
-<li> {{ $contact->name}}  </li>
 
-@endforeach
 
-<h1>Only Messages in Contacts</h1>
+    </tr>
+    @endforeach
 
-@foreach ($contacts as $contact)
+  </tbody>
 
-<li> {{ $contact->message}}  </li>
+  <!-- end of table content -->
+</table>
 
-@endforeach
 
-</body>
-</html>
+
+@endsection

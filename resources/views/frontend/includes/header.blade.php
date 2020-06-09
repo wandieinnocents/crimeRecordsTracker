@@ -10,17 +10,17 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- site icons -->
-<link rel="icon" href="images/fevicon/fevicon.png" type="image/png" />
+<link rel="icon" href="{{asset('images/fevicon/fevicon.png')}}" type="image/png" />
 <!-- bootstrap css -->
-<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
 <!-- site css -->
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" />
 <!-- responsive css -->
 <link rel="stylesheet" href="css/responsive.css" />
 <!-- colors css -->
-<link rel="stylesheet" href="css/colors.css" />
+<link rel="stylesheet" href="{{ asset('css/colors.css') }}" />
 <!-- wow animation css -->
-<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" href="{{ asset('css/animate.css') }}" />
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
